@@ -79,6 +79,10 @@ setup(
         "doc": ["*.*"],
         "examples": ["*.py"],
     },
+    data_files=[
+        ('can/interfaces/canalystii', ['can/interfaces/canalystii/libcontrolcan.so']),
+        ('can/interfaces/canalystii', ['can/interfaces/canalystii/ControlCAN.dll'])
+    ],
     # Installation
     # see https://www.python.org/dev/peps/pep-0345/#version-specifiers
     python_requires=">=3.6",
